@@ -1,0 +1,1 @@
+print("Testing of Code diff analysis for multiple commits after one push is Successfull")
