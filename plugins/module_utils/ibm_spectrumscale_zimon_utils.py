@@ -21,7 +21,7 @@ import os
 import re
 import json
 import time
-
+print("Test")
 try:
     from ansible.module_utils.ibm_spectrumscale_utils import runCmd, \
             GPFS_CMD_PATH, RC_SUCCESS, SpectrumScaleException

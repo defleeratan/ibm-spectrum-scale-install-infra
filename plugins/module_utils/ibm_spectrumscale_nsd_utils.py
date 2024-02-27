@@ -28,13 +28,14 @@ except:
     from ibm_spectrumscale_utils import runCmd, parse_unique_records, \
             GPFS_CMD_PATH, RC_SUCCESS, SpectrumScaleException
 
-
+print("Test")
 class SpectrumScaleNSD:
     def __init__(self, nsd_dict):
         self.nsd = nsd_dict
 
     def get_name(self):
         name = self.nsd["diskName"]
+        print("Test")
         return name
 
     def get_volume_id(self):

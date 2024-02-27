@@ -25,7 +25,7 @@
     register: cluster_info_out
     run_once: true
 
-  - name: Display cluster information
+  - name: Display cluster information 2
     debug:
       msg: "{{ cluster_info_out }}"
 

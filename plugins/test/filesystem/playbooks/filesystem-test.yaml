@@ -23,7 +23,7 @@
       op: 'get'
     register: module_out
 
-  - name: Dump Filesystem output
+  - name: Dump Filesystem output 1
     debug:
       msg: "{{ (module_out.result | from_json).filesystems | map(attribute='deviceName') | list }}"
 
