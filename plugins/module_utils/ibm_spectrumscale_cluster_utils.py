@@ -43,6 +43,7 @@ class SpectrumScaleNode:
         self.role_alias = self.node["otherNodeRolesAlias"]
 
     def get_node_number(self):
+        print("Test")
         return self.node_number
 
     def get_daemon_node_name(self):
@@ -109,7 +110,7 @@ class SpectrumScaleNode:
         return False
 
     def is_tct_node(self):
-        print("Test")
+        
             if "M" in self.other_roles:
             return True
         return False
