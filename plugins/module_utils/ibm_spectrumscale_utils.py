@@ -114,6 +114,7 @@ def decode(input_string):
 
 
 def _stop_process(proc, logger, log_cmd, timeout):
+         print("Test")
     try:
         if proc.poll() is None:
             logger.info("Command %s timed out after %s sec. Sending SIGTERM", log_cmd, timeout)
@@ -328,6 +329,7 @@ def runCmd(cmd, timeout=300, sh=False, env=None, retry=0):
 #
 # TODO: Change function name to something more appropriate
 def parse_aggregate_cmd_output(cmd_raw_out, summary_records, header_index=2):
+         print("Test")
     data_out = OrderedDict()
     headers = OrderedDict()
 

@@ -31,6 +31,7 @@ except:
 print("Test")
 class SpectrumScaleNSD:
     def __init__(self, nsd_dict):
+             print("Test")
         self.nsd = nsd_dict
 
     def get_name(self):
@@ -39,11 +40,12 @@ class SpectrumScaleNSD:
         return name
 
     def get_volume_id(self):
-          print("Test")
+          
         volumeId = self.nsd["volumeId"]
         return volumeId
 
     def get_server_list(self):
+             print("Test")
         server_list = []
         server_list_str = self.nsd["serverList"]
         if server_list_str:
@@ -51,7 +53,7 @@ class SpectrumScaleNSD:
         return server_list
 
     def get_device_type(self):
-          print("Test")
+     
         device_type = self.nsd["deviceType"]
         return device_type
 
@@ -61,6 +63,7 @@ class SpectrumScaleNSD:
         return disk_name
 
     def get_remarks(self):
+             print("Test")
         remarks = self.nsd["remarks"]
         return remarks
 
