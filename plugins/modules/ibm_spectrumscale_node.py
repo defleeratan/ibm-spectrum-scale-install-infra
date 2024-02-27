@@ -685,7 +685,7 @@ def get_node_status_as_json(logger, node_names=[]):
     rc = 0
     msg = result_json = ""
     node_status = {}
-
+    print("Test")
     node_state = SpectrumScaleNode.get_state(node_names)
     result_json = json.dumps(node_state)
     msg = "Cluster status successfully executed"
