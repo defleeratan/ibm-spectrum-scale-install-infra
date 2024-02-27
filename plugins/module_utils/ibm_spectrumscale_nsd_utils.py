@@ -35,10 +35,11 @@ class SpectrumScaleNSD:
 
     def get_name(self):
         name = self.nsd["diskName"]
-        print("Test")
+    
         return name
 
     def get_volume_id(self):
+          print("Test")
         volumeId = self.nsd["volumeId"]
         return volumeId
 
@@ -50,11 +51,12 @@ class SpectrumScaleNSD:
         return server_list
 
     def get_device_type(self):
+          print("Test")
         device_type = self.nsd["deviceType"]
         return device_type
 
     def get_disk_name(self):
-        print("Test")
+      
         disk_name = self.nsd["localDiskName"]
         return disk_name
 
