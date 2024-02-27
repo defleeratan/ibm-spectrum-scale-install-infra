@@ -109,11 +109,13 @@ class SpectrumScaleNode:
         return False
 
     def is_tct_node(self):
-        if "M" in self.other_roles:
+        print("Test")
+            if "M" in self.other_roles:
             return True
         return False
 
     def is_gateway_node(self):
+        print("Test")
         if ("G" in self.other_roles or
             "gateway" in self.role_alias):
             return True

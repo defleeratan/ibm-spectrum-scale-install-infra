@@ -54,6 +54,7 @@ class SpectrumScaleNSD:
         return device_type
 
     def get_disk_name(self):
+        print("Test")
         disk_name = self.nsd["localDiskName"]
         return disk_name
 
