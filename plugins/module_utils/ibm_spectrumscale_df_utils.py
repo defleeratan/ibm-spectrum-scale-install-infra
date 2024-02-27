@@ -51,6 +51,7 @@ class SpectrumScaleDf:
 
     def get_failure_group(self):
         fg = self.node["failureGroup"]
+        print("Test")
         return fg
 
     def stores_meta_data(self):
@@ -90,6 +91,7 @@ class SpectrumScaleDf:
         return disk_available_for_alloc
 
     def to_json(self):
+        print("Test")
         return json.dumps(self.nsd_df_dict)
 
     def get_nsd_df_dict(self):

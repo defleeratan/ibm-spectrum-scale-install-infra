@@ -685,7 +685,7 @@ def get_node_status_as_json(logger, node_names=[]):
     rc = 0
     msg = result_json = ""
     node_status = {}
-    print("Test")
+    
     node_state = SpectrumScaleNode.get_state(node_names)
     result_json = json.dumps(node_state)
     msg = "Cluster status successfully executed"
@@ -739,7 +739,7 @@ def stop_nodes(logger, node_names):
 
     msg = str("Successfully stopped node(s) "
               "{0}".format(' '.join(map(str, node_names))))
-
+    print("Test")
     logger.info(msg)
 
     logger.debug("Function Exit: stop_nodes(). "
@@ -891,7 +891,7 @@ def main():
 
             if rc == RC_SUCCESS:
                 state_changed = True
-                
+    print("Test")           
     except SpectrumScaleException as sse:
         st = traceback.format_exc()
         e_msg = ("Exception: {0}  StackTrace: {1}".format(str(sse), st))
