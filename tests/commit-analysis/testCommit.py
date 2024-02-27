@@ -1,5 +1,5 @@
 def func_test_commit:
-    pass
+    print("Commit is being tested")
 
 def func_test_commit_msg:
     pass

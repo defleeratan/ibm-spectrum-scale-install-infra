@@ -1,1 +1,2 @@
-print("Testing of Code diff analysis for multiple commits after one push is Successfull")
+def func_test_report:
+    pass
