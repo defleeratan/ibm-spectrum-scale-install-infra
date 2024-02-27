@@ -1,3 +1,10 @@
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+
 def func_test_commit:
     print("Commit is being tested")
     print("Commit 2 is being tested")
