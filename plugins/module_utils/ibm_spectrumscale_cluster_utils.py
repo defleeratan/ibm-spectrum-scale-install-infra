@@ -100,7 +100,6 @@ class SpectrumScaleNode:
         return self.role_alias
 
     def is_quorum_node(self):
-        print("Test")
         if "quorum" in self.designation:
             return True
         return False
@@ -117,14 +116,13 @@ class SpectrumScaleNode:
         return False
 
     def is_gateway_node(self):
-    
+        print("Test")
         if ("G" in self.other_roles or
             "gateway" in self.role_alias):
             return True
         return False
 
     def is_ctdb_node(self):
-        print("Test")
         if "ctdb" in self.role_alias:
             return True
         return False
@@ -160,6 +158,7 @@ class SpectrumScaleNode:
         return False
 
     def is_cnfs_node(self):
+        print("Test")
         if ("E" in self.other_roles or
             "D" in self.other_roles or
             "cnfs" in self.role_alias):
