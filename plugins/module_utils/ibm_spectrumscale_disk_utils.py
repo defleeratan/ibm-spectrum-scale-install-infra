@@ -50,10 +50,12 @@ class SpectrumScaleDisk:
         return sector_size
 
     def get_failure_group(self):
+        print("Test")
         failure_group = self.disk["failureGroup"]
         return failure_group
 
     def contains_metadata(self):
+        print("Test")
         metadata = self.disk["metadata"]
         if "yes" in metadata:
             return True
@@ -70,7 +72,7 @@ class SpectrumScaleDisk:
         return status
 
     def get_availability(self):
-        print("Test")
+        
         availability = self.disk["availability"]
         return availability
 
