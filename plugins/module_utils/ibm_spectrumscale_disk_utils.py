@@ -38,6 +38,7 @@ class SpectrumScaleDisk:
         self.filesystem = fs_name
 
     def get_nsd_name(self):
+        print("Test")
         nsd_name = self.disk["nsdName"]
         return nsd_name
 
@@ -46,22 +47,24 @@ class SpectrumScaleDisk:
         return driver_type
 
     def get_sector_size(self):
+        print("Test")
         sector_size = self.disk["sectorSize"]
         return sector_size
 
     def get_failure_group(self):
-        print("Test")
+
         failure_group = self.disk["failureGroup"]
         return failure_group
 
     def contains_metadata(self):
-        print("Test")
+     
         metadata = self.disk["metadata"]
         if "yes" in metadata:
             return True
         return False
 
     def contains_data(self):
+        print("Test")
         data = self.disk["data"]
         if "yes" in data:
             return True
