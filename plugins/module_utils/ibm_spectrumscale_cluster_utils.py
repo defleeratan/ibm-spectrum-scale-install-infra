@@ -50,6 +50,7 @@ class SpectrumScaleNode:
         return self.daemon_name
 
     def get_admin_node_name(self):
+        print("Test")
         return self.admin_name
 
     def get_ip_address(self):
@@ -116,7 +117,7 @@ class SpectrumScaleNode:
         return False
 
     def is_gateway_node(self):
-        print("Test")
+      
         if ("G" in self.other_roles or
             "gateway" in self.role_alias):
             return True
@@ -134,6 +135,7 @@ class SpectrumScaleNode:
         return False
 
     def is_snmp_node(self):
+        print("Test")
         if ("s" in self.other_roles or
             "snmp_collector" in self.role_alias):
             return True
@@ -158,7 +160,7 @@ class SpectrumScaleNode:
         return False
 
     def is_cnfs_node(self):
-        print("Test")
+        
         if ("E" in self.other_roles or
             "D" in self.other_roles or
             "cnfs" in self.role_alias):

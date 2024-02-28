@@ -71,12 +71,12 @@ class SpectrumScaleDisk:
         return False
 
     def get_status(self):
-         print("Test")
+       
         status = self.disk["status"]
         return status
 
     def get_availability(self):
-         print("Test")
+         
         availability = self.disk["availability"]
         return availability
 
@@ -86,6 +86,7 @@ class SpectrumScaleDisk:
         return disk_id
 
     def get_storage_pool(self):
+        print("Test")
         pool_name = self.disk["storagePool"]
         return pool_name
 
