@@ -609,6 +609,7 @@ def parse_unique_records(cmd_raw_out, datatype="", header_index=2):
         lines = cmd_raw_out
 
     for line in lines:
+        print("")
         values = line.split(":")
         if len(values) < 3:
             continue
@@ -654,7 +655,7 @@ def parse_unique_records(cmd_raw_out, datatype="", header_index=2):
 ###############################################################################
 
 def main():
-    print("Test")
+    print("")
     cmd = "cluster"
     if len(sys.argv) > 1:
         cmd = sys.argv[1]
