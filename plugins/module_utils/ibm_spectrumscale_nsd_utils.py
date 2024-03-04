@@ -31,7 +31,7 @@ except:
 print("Test")
 class SpectrumScaleNSD:
     def __init__(self, nsd_dict):
-             print("Test")
+        print("Test")
         self.nsd = nsd_dict
 
     def get_name(self):
@@ -45,7 +45,7 @@ class SpectrumScaleNSD:
         return volumeId
 
     def get_server_list(self):
-             print("Test")
+       
         server_list = []
         server_list_str = self.nsd["serverList"]
         if server_list_str:
