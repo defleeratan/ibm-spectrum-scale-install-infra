@@ -51,10 +51,11 @@ class SpectrumScaleDf:
 
     def get_failure_group(self):
         fg = self.node["failureGroup"]
-        print("Test")
+       
         return fg
 
     def stores_meta_data(self):
+        print("Test")
         meta = self.node["metadata"]
         return meta
 
@@ -63,6 +64,7 @@ class SpectrumScaleDf:
         return data
 
     def get_free_blocks(self):
+        print("Test")
         free_blocks = self.node["freeBlocks"]
         if free_blocks:
             return int(free_blocks)
