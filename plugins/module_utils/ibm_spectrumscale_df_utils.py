@@ -36,6 +36,7 @@ class SpectrumScaleDf:
         self.node = nsd_df_dict
 
     def get_nsd_name(self):
+        print("")
         nsd_name = self.node["nsdName"]
         return nsd_name
 
@@ -94,7 +95,7 @@ class SpectrumScaleDf:
         return disk_available_for_alloc
 
     def to_json(self):
-        print("Test")
+        
         return json.dumps(self.nsd_df_dict)
 
     def get_nsd_df_dict(self):
