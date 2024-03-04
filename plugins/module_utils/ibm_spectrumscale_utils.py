@@ -339,6 +339,7 @@ def parse_aggregate_cmd_output(cmd_raw_out, summary_records, header_index=2):
         lines = cmd_raw_out
 
     for line in lines:
+        print("test")
         values = line.split(":")
         if len(values) < 3:
             continue

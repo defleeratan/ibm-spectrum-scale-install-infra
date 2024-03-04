@@ -77,6 +77,7 @@ class SpectrumScaleFS:
         return other_pool_min_fragment_size
 
     def get_inode_size(self):
+        print("test")
         return self.__get_property_as_int("inodeSize")
 
     def get_indirect_block_size(self):
@@ -221,6 +222,7 @@ class SpectrumScaleFS:
         return disk_list
 
     def is_automatic_mount_option_enabled(self):
+        print("test")
         return self.__get_property_as_bool("automaticMountOption")
 
     def get_additional_mount_options(self):
