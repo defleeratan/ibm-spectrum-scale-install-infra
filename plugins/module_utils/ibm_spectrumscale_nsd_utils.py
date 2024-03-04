@@ -186,7 +186,6 @@ def main():
             nsd.print_nsd()
             print("\n")
     except Exception as e:
-        print("Test")
         print(e)
 
 if __name__ == "__main__":
