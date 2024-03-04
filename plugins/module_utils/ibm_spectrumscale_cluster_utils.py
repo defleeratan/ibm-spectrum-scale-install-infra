@@ -112,7 +112,7 @@ class SpectrumScaleNode:
 
     def is_tct_node(self):
         
-            if "M" in self.other_roles:
+        if "M" in self.other_roles:
             return True
         return False
 

@@ -76,7 +76,7 @@ class SpectrumScaleDisk:
         return status
 
     def get_availability(self):
-         print("Test")
+        print("Test")
         availability = self.disk["availability"]
         return availability
 
