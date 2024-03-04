@@ -111,7 +111,7 @@ class SpectrumScaleNode:
         return False
 
     def is_tct_node(self):
-        
+        print("test")
         if "M" in self.other_roles:
             return True
         return False
