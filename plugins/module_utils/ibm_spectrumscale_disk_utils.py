@@ -91,7 +91,7 @@ class SpectrumScaleDisk:
         return pool_name
 
     def get_remarks(self):
-        print("Test")
+        
         remarks = self.disk["remarks"]
         return remarks
 
