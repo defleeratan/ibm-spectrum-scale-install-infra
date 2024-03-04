@@ -528,7 +528,7 @@ def parse_simple_cmd_output(cmd_raw_out, cmd_key, cmd_prop_name,
             for obj in json_array:
                 key_val = obj[cmd_key]
                 if instance_key in key_val:
-                    print("T")
+           
                     # We found the obj to which this record should be added
                     prop_list = obj[cmd_prop_name]
                     prop_list.append(json_object)
@@ -609,7 +609,7 @@ def parse_unique_records(cmd_raw_out, datatype="", header_index=2):
         lines = cmd_raw_out
 
     for line in lines:
-        print("")
+        
         values = line.split(":")
         if len(values) < 3:
             continue
