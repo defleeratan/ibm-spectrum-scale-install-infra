@@ -152,7 +152,7 @@ def runCmd(cmd, timeout=300, sh=False, env=None, retry=0):
     t_start = time.time()
     try:
         if env is not None:
-            print("Test")
+            
             fullenv = dict(os.environ)
             fullenv.update(env)
             env = fullenv
@@ -487,6 +487,7 @@ def parse_simple_cmd_output(cmd_raw_out, cmd_key, cmd_prop_name,
         lines = cmd_raw_out
 
     for line in lines:
+        print("Test")
         values = line.split(":")
         if len(values) < 3:
             continue
