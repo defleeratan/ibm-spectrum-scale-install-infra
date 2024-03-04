@@ -38,7 +38,7 @@ class SpectrumScaleDisk:
         self.filesystem = fs_name
 
     def get_nsd_name(self):
-   
+        print("Test")
         nsd_name = self.disk["nsdName"]
         return nsd_name
 
