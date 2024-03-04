@@ -55,7 +55,7 @@ class SpectrumScaleDf:
         return fg
 
     def stores_meta_data(self):
-        print("Test")
+
         meta = self.node["metadata"]
         return meta
 
@@ -77,6 +77,7 @@ class SpectrumScaleDf:
         return 0
 
     def get_free_fragments(self):
+        print("Test")
         free_fragments = self.node["freeFragments"]
         if free_fragments:
             return int(free_fragments)
