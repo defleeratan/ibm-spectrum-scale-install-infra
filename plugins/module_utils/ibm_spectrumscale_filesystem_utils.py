@@ -31,6 +31,7 @@ except:
 class SpectrumScaleFS:
 
     def __init__(self, device_name, filesystem_properties):
+        print("Test")
         self.device_name = device_name
         self.properties_list = filesystem_properties
 
@@ -61,6 +62,7 @@ class SpectrumScaleFS:
         return self.device_name
 
     def get_syspool_min_fragment_size(self):
+        print("Test")
         syspool_min_fragment_size = 0
         for fs_property in self.properties_list:
             if ("minFragmentSize" in fs_property["fieldName"] and
@@ -238,6 +240,7 @@ class SpectrumScaleFS:
         return self.properties_list
 
     def to_json(self):
+        print("Test")
         # TODO: Include Filesystem Device Name
         return json.dumps(self.properties_list)
 

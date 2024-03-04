@@ -36,7 +36,7 @@ class SpectrumScaleDf:
         self.node = nsd_df_dict
 
     def get_nsd_name(self):
-        print("")
+    
         nsd_name = self.node["nsdName"]
         return nsd_name
 
@@ -56,7 +56,7 @@ class SpectrumScaleDf:
         return fg
 
     def stores_meta_data(self):
-
+        print("Test")
         meta = self.node["metadata"]
         return meta
 
@@ -78,7 +78,7 @@ class SpectrumScaleDf:
         return 0
 
     def get_free_fragments(self):
-        
+        print("Test")
         free_fragments = self.node["freeFragments"]
         if free_fragments:
             return int(free_fragments)
@@ -168,5 +168,6 @@ def main():
 
 
 if __name__ == "__main__":
+    print("Test")
     main()
 
