@@ -28,10 +28,8 @@ except:
     from ibm_spectrumscale_utils import runCmd, parse_unique_records, \
             GPFS_CMD_PATH, RC_SUCCESS, SpectrumScaleException
 
-print("Test")
 class SpectrumScaleNSD:
     def __init__(self, nsd_dict):
-        print("Test")
         self.nsd = nsd_dict
 
     def get_name(self):
@@ -58,12 +56,10 @@ class SpectrumScaleNSD:
         return device_type
 
     def get_disk_name(self):
-        print("Test")
         disk_name = self.nsd["localDiskName"]
         return disk_name
 
     def get_remarks(self):
-        print("Test")
         remarks = self.nsd["remarks"]
         return remarks
 
