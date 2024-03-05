@@ -167,6 +167,8 @@ def main():
         nsd_df.print_nsd_df()
         print("\n")
 
+def samp():
+    pass
 
 if __name__ == "__main__":
     print("Test")
