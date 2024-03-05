@@ -63,7 +63,7 @@ class SpectrumScaleNSD:
         return disk_name
 
     def get_remarks(self):
-
+        print("Test")
         remarks = self.nsd["remarks"]
         return remarks
 

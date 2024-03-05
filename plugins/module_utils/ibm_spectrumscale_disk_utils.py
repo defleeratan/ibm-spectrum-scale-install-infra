@@ -38,7 +38,6 @@ class SpectrumScaleDisk:
         self.filesystem = fs_name
 
     def get_nsd_name(self):
-        print("Test")
         nsd_name = self.disk["nsdName"]
         return nsd_name
 
@@ -76,7 +75,7 @@ class SpectrumScaleDisk:
         return status
 
     def get_availability(self):
-        print("Test")
+  
         availability = self.disk["availability"]
         return availability
 

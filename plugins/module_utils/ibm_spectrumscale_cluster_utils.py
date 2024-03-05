@@ -383,6 +383,7 @@ class SpectrumScaleCluster:
         stdout = stderr = ""
         rc = RC_SUCCESS
         cmd = []
+        print("Test")
         mmcmd_idx = 1
         if admin_ip:
             cmd.extend(["ssh", admin_ip])
@@ -519,7 +520,7 @@ class SpectrumScaleCluster:
     def add_node(node_name, stanza_path, admin_ip=None):
         stdout = stderr = ""
         rc = RC_SUCCESS
-
+        print("Test")
         if isinstance(node_name, str):
             node_name_str = node_name
         else:
