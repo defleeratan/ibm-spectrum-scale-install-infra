@@ -65,7 +65,6 @@ class SpectrumScaleDf:
         return data
 
     def get_free_blocks(self):
-        print("Test")
         free_blocks = self.node["freeBlocks"]
         if free_blocks:
             return int(free_blocks)
@@ -96,7 +95,6 @@ class SpectrumScaleDf:
         return disk_available_for_alloc
 
     def to_json(self):
-        print("Test")
         return json.dumps(self.nsd_df_dict)
 
     def get_nsd_df_dict(self):
@@ -176,6 +174,5 @@ if True:
     pass
 
 if __name__ == "__main__":
-    print("Test")
     main()
 

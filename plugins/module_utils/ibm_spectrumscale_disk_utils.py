@@ -119,7 +119,6 @@ class SpectrumScaleDisk:
         return disk_uid
 
     def get_thin_disk_type(self):
-        print("Test")
         thin_disk_type = self.disk["thinDiskType"]
         return thin_disk_type
 
@@ -231,7 +230,6 @@ def main():
         except Exception as e:
             print(e)
     else:
-        print("Test")
         print("The file system name should be specified")
         rc = 1
 

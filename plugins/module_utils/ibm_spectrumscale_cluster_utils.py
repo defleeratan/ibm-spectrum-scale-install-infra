@@ -50,14 +50,12 @@ class SpectrumScaleNode:
         return self.daemon_name
 
     def get_admin_node_name(self):
-        print("Test")
         return self.admin_name
 
     def get_ip_address(self):
         return self.ip
 
     def get_admin_login_name(self):
-        print("Test")
         return self.admin_login
 
     def get_designation(self):
@@ -112,7 +110,6 @@ class SpectrumScaleNode:
         return False
 
     def is_tct_node(self):
-        print("Test")
         if "M" in self.other_roles:
             return True
         return False
@@ -136,7 +133,6 @@ class SpectrumScaleNode:
         return False
 
     def is_snmp_node(self):
-        print("Test")
         if ("s" in self.other_roles or
             "snmp_collector" in self.role_alias):
             return True
@@ -383,7 +379,6 @@ class SpectrumScaleCluster:
         stdout = stderr = ""
         rc = RC_SUCCESS
         cmd = []
-        print("Test")
         mmcmd_idx = 1
         if admin_ip:
             cmd.extend(["ssh", admin_ip])
@@ -520,7 +515,6 @@ class SpectrumScaleCluster:
     def add_node(node_name, stanza_path, admin_ip=None):
         stdout = stderr = ""
         rc = RC_SUCCESS
-        print("Test")
         if isinstance(node_name, str):
             node_name_str = node_name
         else:
