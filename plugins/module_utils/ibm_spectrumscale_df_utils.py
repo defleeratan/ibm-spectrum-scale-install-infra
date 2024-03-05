@@ -172,6 +172,8 @@ def samp():
 
 def samp2():
     pass
+if True:
+    pass
 
 if __name__ == "__main__":
     print("Test")
