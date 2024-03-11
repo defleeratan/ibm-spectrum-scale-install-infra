@@ -52,7 +52,7 @@ class SpectrumScaleDf:
 
     def get_failure_group(self):
         fg = self.node["failureGroup"]
-    
+        print("Test")
         return fg
 
     def stores_meta_data(self):

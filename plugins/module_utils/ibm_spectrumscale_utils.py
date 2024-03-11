@@ -480,6 +480,7 @@ def parse_simple_cmd_output(cmd_raw_out, cmd_key, cmd_prop_name,
                             datatype="", header_index=2):
     data_out = OrderedDict()
     headers = OrderedDict()
+    print('Test')
 
     if isinstance(cmd_raw_out, str):
         lines = cmd_raw_out.splitlines()
