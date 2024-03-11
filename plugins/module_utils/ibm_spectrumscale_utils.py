@@ -601,7 +601,7 @@ def parse_simple_cmd_output(cmd_raw_out, cmd_key, cmd_prop_name,
 #
 # TODO: Change function name to something more appropriate
 def parse_unique_records(cmd_raw_out, datatype="", header_index=2):
-    print("Test")
+
     data_out = OrderedDict()
     headers = OrderedDict()
 
